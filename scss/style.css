@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 26px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  line-height: 53px;
+  color: #ffffff;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: inherit;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .board {
+  width: 1126px;
+  height: 429px;
+  background: #474554;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .board h2 {
+  font-size: 32px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+main .board .board__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  gap: 42px;
+}
+
+main .board .board__content .table {
+  width: 732px;
+  height: 278px;
+  padding: 16px 24px 16px 16px;
+  background: #c4c4c4;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+}
+
+.row {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: 70px 156px 64px 156px 38px 46px;
+      grid-template-columns: 70px 156px 64px 156px 38px 46px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row.row__header {
+  font-weight: 600;
+}
+
+.row:not(.row__header) {
+  padding-top: 10px;
+  border-top: 1px solid #939393;
+}
+
+.row:not(.row__header) p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row:not(.row__header) p .reg__name {
+  width: 70px;
+}
+
+.row:not(.row__header) p .reg__email {
+  width: 156px;
+}
+
+.row:not(.row__header) p .reg__genre {
+  width: 64px;
+}
+
+.row:not(.row__header) p .reg__desc {
+  width: 156px;
+}
+
+.row:not(.row__header) p .reg__edit {
+  width: 38px;
+}
+
+.row:not(.row__header) p .reg__delete {
+  width: 46px;
+}
+/*# sourceMappingURL=style.css.map */
