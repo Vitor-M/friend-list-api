@@ -48,7 +48,52 @@ main {
                 flex-direction: column;
                 gap: 14px;
             }
+
+            .form__friendRegister {
+                display: flex;
+                flex-direction: column;
+                width: 262px;
+                height: 278px;
+                padding: 12px 12px 8px 12px;
+                background: #c4c4c4;
+                justify-content: space-between;
+                label {
+                    font-weight: 500;
+                    &::after {
+                        content: "*";
+                        color: #da1111;
+                        margin-left: 4px;
+                        font-weight: bolder;
+                    }
+                }
+
+                .btn__form {
+                    width: 102px;
+                }
+            }
         }
+    }
+}
+
+.btn {
+    border-radius: 8px;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        background: #fdb251;
+    }
+}
+
+form {
+    .btn__form {
+        background: #ffbe6b;
+        height: 24px;
+    }
+
+    .form__field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
     }
 }
 
@@ -92,4 +137,16 @@ main {
             }
         }
     }
+}
+
+input,
+select {
+    padding-left: 10px;
+    background-color: #11055b;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    height: 18px;
+    border: none;
 }

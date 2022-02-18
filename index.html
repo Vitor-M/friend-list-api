@@ -41,7 +41,28 @@
                         <p class="reg__delete">🗑️</p>
                     </div>
                 </div>
-
+                <form name="friendRegisterForm" class="form__friendRegister">
+                    <div class="form__field">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form__field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="form__field">
+                        <label for="genre">Gênero</label>
+                        <select name="genre">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <label for="description">Descrição</label>
+                        <input type="text" name="description">
+                    </div>
+                    <button type="submit" class="btn btn__form">Cadastrar</button>
+                </form>
             </div>
         </section>
     </main>

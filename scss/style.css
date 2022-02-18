@@ -102,6 +102,64 @@ main .board .board__content .table {
   gap: 14px;
 }
 
+main .board .board__content .form__friendRegister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 262px;
+  height: 278px;
+  padding: 12px 12px 8px 12px;
+  background: #c4c4c4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .board .board__content .form__friendRegister label {
+  font-weight: 500;
+}
+
+main .board .board__content .form__friendRegister label::after {
+  content: "*";
+  color: #da1111;
+  margin-left: 4px;
+  font-weight: bolder;
+}
+
+main .board .board__content .form__friendRegister .btn__form {
+  width: 102px;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #fdb251;
+}
+
+form .btn__form {
+  background: #ffbe6b;
+  height: 24px;
+}
+
+form .form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
 .row {
   width: 100%;
   display: -ms-grid;
@@ -153,5 +211,17 @@ main .board .board__content .table {
 
 .row:not(.row__header) p .reg__delete {
   width: 46px;
+}
+
+input,
+select {
+  padding-left: 10px;
+  background-color: #11055b;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  height: 18px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
