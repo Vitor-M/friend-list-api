@@ -54,8 +54,8 @@ main {
                 }
 
                 &::-webkit-scrollbar-track {
-                    background-color: #e4e4e4;
-                    border-radius: 4px;
+                    background-color: #eae9e9;
+                    border-radius: 2px;
                     margin: 40px 0 22px 0;
                 }
 
@@ -112,6 +112,17 @@ form {
         display: flex;
         flex-direction: column;
         gap: 6px;
+        position: relative;
+
+        &.form__field__required::after {
+            position: absolute;
+            bottom: -8px;
+            content: "";
+            font-size: 11px;
+            line-height: 2px;
+            font-weight: 500;
+            color: #da1111;
+        }
     }
 }
 
@@ -159,9 +170,9 @@ form {
 
 input,
 select {
-    padding-left: 10px;
+    padding-left: 6px;
     background-color: #11055b;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 12px;
     line-height: 14px;
     color: #ffffff;
