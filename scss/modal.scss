@@ -12,9 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 
     &#modal__friend__editor {
-        display: none;
         .modal__box {
             width: 478px;
             height: 344px;

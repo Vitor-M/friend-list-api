@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss/style.css" />
-    <link rel="stylesheet" href="/scss/modal.css">
     <script src="./js/modal.js" defer></script>
+    <script type="module" src="./js/index.js" defer></script>
     <title>FriendList </title>
 </head>
 
@@ -26,86 +26,6 @@
                         <p>Editar</p>
                         <p>Deletar</p>
                     </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
-                    <div class="row">
-                        <p class="reg__name">Someone</p>
-                        <p class="reg__email">someoneE@gmail.com</p>
-                        <p class="reg__genre">Masculino</p>
-                        <p class="reg__desc">Officia est id esse mollit occaecat.</p>
-                        <p class="reg__edit">✏️</p>
-                        <p class="reg__delete">🗑️</p>
-                    </div>
                 </div>
                 <form name="friendRegisterForm" class="form__friendRegister">
                     <div class="form__field form__field__required">
@@ -119,6 +39,7 @@
                     <div class="form__field form__field__required">
                         <label for="genre">Gênero</label>
                         <select name="genre">
+                            <option value="" selected></option>
                             <option value="M">Masculino</option>
                             <option value="F">Feminino</option>
                         </select>
@@ -158,7 +79,12 @@
             </form>
             <button type="submit" form="friendEditForm" class="btn btn__form">Alterar Dados</button>
             <a class="btn btn__modal__close">
-                <img src="./assets/close.svg" alt="Fechar Modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" alt="Fechar Modal"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.3334 2.54669L17.4534 0.666687L10 8.12002L2.54669 0.666687L0.666687 2.54669L8.12002 10L0.666687 17.4534L2.54669 19.3334L10 11.88L17.4534 19.3334L19.3334 17.4534L11.88 10L19.3334 2.54669Z"
+                        fill="white" />
+                </svg>
             </a>
         </div>
     </div>

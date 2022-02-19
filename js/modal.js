@@ -1,11 +1,9 @@
 
 (() => {
-    const modalCloseBtns = document.querySelectorAll(".btn__modal__close");
     const editBtns = document.querySelectorAll(".reg__edit");
     const deleteBtns = document.querySelectorAll(".reg__delete");
     const editModal = document.querySelector("#modal__friend__editor");
     const deleteModal = document.querySelector("#modal__friend__delete");
-    const genericModals = document.querySelectorAll(".modal");
 
     function OpenRegEditorModal() {
         editBtns.forEach(btn => {
@@ -24,6 +22,8 @@
     }
 
     function CloseModal() {
+        const modalCloseBtns = document.querySelectorAll(".btn__modal__close");
+        const genericModals = document.querySelectorAll(".modal");
         modalCloseBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 genericModals.forEach(modal => {

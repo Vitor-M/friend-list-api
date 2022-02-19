@@ -1,0 +1,32 @@
+{
+    "friends": [
+        {
+            "id": 1,
+            "name": "Caio Bruno",
+            "email": "badluck4u@gmail.com",
+            "gender": "M",
+            "description": "Instrutor Front-End"
+        },
+        {
+            "id": 2,
+            "name": "Vanessa Gomes",
+            "email": "nessinhaMandraka@gmail.com",
+            "gender": "F",
+            "description": "A mais Barril"
+        },
+        {
+            "id": 3,
+            "name": "Lud Brito",
+            "email": "luluCajaCity@gmail.com",
+            "gender": "F",
+            "description": "A mais Braba"
+        },
+        {
+            "id": 4,
+            "name": "Lázaro",
+            "email": "lazinho@gmail.com",
+            "gender": "M",
+            "description": "O mais Bronca"
+        }
+    ]
+}
