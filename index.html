@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss/style.css" />
+    <link rel="stylesheet" href="/scss/modal.css">
     <title>FriendList </title>
 </head>
 
@@ -130,6 +131,37 @@
             </div>
         </section>
     </main>
+    <div class="modal">
+        <div class="modal__box">
+            <h2>Editar os dados de </h2>
+            <form name="friendEditForm" class="form__friendEdit">
+                <div class="form__field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form__field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form__field">
+                    <label for="description">Descrição</label>
+                    <input type="text" name="description">
+                </div>
+                <div class="form__field">
+                    <label for="genre">Gênero</label>
+                    <select name="genre">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
+            </form>
+            <button type="submit" form="friendEditForm" class="btn btn__form">Alterar Dados</button>
+            <a class="btn btn__modal__close">
+                <img src="./assets/close.svg" alt="Fechar Modal">
+            </a>
+        </div>
+    </div>
+
 </body>
 
 </html>
