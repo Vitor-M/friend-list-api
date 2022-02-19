@@ -13,53 +13,88 @@
     justify-content: center;
     align-items: center;
 
-    .modal__box {
-        width: 478px;
-        height: 344px;
-        background: #c4c4c4;
-        padding: 14px 24px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        position: relative;
-
-        .btn__modal__close {
-            position: absolute;
+    &#modal__friend__editor {
+        display: none;
+        .modal__box {
+            width: 478px;
+            height: 344px;
+            background: #c4c4c4;
+            padding: 14px 24px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            top: -16px;
-            right: -16px;
-            background: #ff0000;
-            padding: 6px;
-            border-radius: 100%;
-        }
+            gap: 50px;
+            position: relative;
 
-        h2 {
-            font-weight: 500;
-            font-size: 28px;
-            line-height: 37px;
-        }
-
-        .form__friendEdit {
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-rows: 1fr 1fr;
-            gap: 50px 28px;
-
-            input,
-            select {
-                width: 194px;
+            .btn__modal__close {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                top: -16px;
+                right: -16px;
+                background: #ff0000;
+                padding: 6px;
+                border-radius: 100%;
             }
 
-            label {
-                font-size: 16px;
+            h2 {
                 font-weight: 500;
-                color: #2d2d2d;
+                font-size: 28px;
+                line-height: 37px;
+            }
+
+            .form__friendEdit {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-rows: 1fr 1fr;
+                gap: 50px 28px;
+
+                input,
+                select {
+                    width: 194px;
+                }
+
+                label {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #2d2d2d;
+                }
+            }
+            .btn__form {
+                width: 139px;
             }
         }
-        .btn__form {
-            width: 139px;
+    }
+
+    &#modal__friend__delete {
+        .modal__box {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            h2 {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 47px;
+
+                color: #ffffff;
+            }
+
+            .modal__content {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
         }
+    }
+
+    .btn__modal {
+        height: 58px;
+        width: 140px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 24px;
     }
 }

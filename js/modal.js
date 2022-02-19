@@ -4,6 +4,7 @@
     const editBtns = document.querySelectorAll(".reg__edit");
     const deleteBtns = document.querySelectorAll(".reg__delete");
     const editModal = document.querySelector("#modal__friend__editor");
+    const deleteModal = document.querySelector("#modal__friend__delete");
     const genericModals = document.querySelectorAll(".modal");
 
     function OpenRegEditorModal() {
@@ -17,7 +18,7 @@
     function OpenRegDeleteModal() {
         deleteBtns.forEach(btn => {
             btn.addEventListener("click", () => {
-
+                deleteModal.style.display = "flex";
             });
         });
     }

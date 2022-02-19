@@ -106,6 +106,15 @@ main {
         cursor: pointer;
         background: #fdb251;
     }
+
+    &.btn__blue {
+        background: #7066e0;
+    }
+
+    &.btn__red {
+        color: #ffffff;
+        background: #dc3741;
+    }
 }
 
 form {
@@ -152,23 +161,25 @@ form {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            .reg__name {
+            &.reg__name {
                 width: 70px;
             }
-            .reg__email {
+            &.reg__email {
                 width: 156px;
             }
-            .reg__genre {
+            &.reg__genre {
                 width: 64px;
             }
-            .reg__desc {
+            &.reg__desc {
                 width: 156px;
             }
-            .reg__edit {
+            &.reg__edit {
                 width: 38px;
+                cursor: pointer;
             }
-            .reg__delete {
+            &.reg__delete {
                 width: 46px;
+                cursor: pointer;
             }
         }
     }

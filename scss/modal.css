@@ -38,7 +38,11 @@ body {
           align-items: center;
 }
 
-.modal .modal__box {
+.modal#modal__friend__editor {
+  display: none;
+}
+
+.modal#modal__friend__editor .modal__box {
   width: 478px;
   height: 344px;
   background: #c4c4c4;
@@ -57,7 +61,7 @@ body {
   position: relative;
 }
 
-.modal .modal__box .btn__modal__close {
+.modal#modal__friend__editor .modal__box .btn__modal__close {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,13 +76,13 @@ body {
   border-radius: 100%;
 }
 
-.modal .modal__box h2 {
+.modal#modal__friend__editor .modal__box h2 {
   font-weight: 500;
   font-size: 28px;
   line-height: 37px;
 }
 
-.modal .modal__box .form__friendEdit {
+.modal#modal__friend__editor .modal__box .form__friendEdit {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -87,18 +91,58 @@ body {
   gap: 50px 28px;
 }
 
-.modal .modal__box .form__friendEdit input,
-.modal .modal__box .form__friendEdit select {
+.modal#modal__friend__editor .modal__box .form__friendEdit input,
+.modal#modal__friend__editor .modal__box .form__friendEdit select {
   width: 194px;
 }
 
-.modal .modal__box .form__friendEdit label {
+.modal#modal__friend__editor .modal__box .form__friendEdit label {
   font-size: 16px;
   font-weight: 500;
   color: #2d2d2d;
 }
 
-.modal .modal__box .btn__form {
+.modal#modal__friend__editor .modal__box .btn__form {
   width: 139px;
+}
+
+.modal#modal__friend__delete .modal__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal#modal__friend__delete .modal__box h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+.modal#modal__friend__delete .modal__box .modal__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal .btn__modal {
+  height: 58px;
+  width: 140px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
 }
 /*# sourceMappingURL=modal.css.map */
