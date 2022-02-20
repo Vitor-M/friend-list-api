@@ -10,13 +10,15 @@ export async function getFriend(friendID) {
 }
 
 export async function deleteFriend(friendId) {
-    return "Test - Deleting Friend with id " + friendID;
+    return "Test - Deleting Friend with id " + friendId;
 }
 
-export async function updateFriend(friendId) {
-    return "Test - Updating Friend with id " + friendID;
+export async function updateFriend(friend) {
+    return "Test - Updating Friend " + friend;
 }
 
-
+export async function insertFriend(friend) {
+    return "Test - Inserting Friend " + friend;
+}
 
 

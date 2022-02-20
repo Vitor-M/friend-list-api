@@ -1,13 +1,13 @@
 import { getAllFriends, getFriend, deleteFriend, updateFriend } from "./handlerAPI.js";
+import { OpenRegEditorModal, OpenRegDeleteModal, CloseModal } from "./modal.js";
 
 (() => {
     let friendsList = [];
 
     function populateFriendsTable(list) {
-        const table = document.querySelector(".table");
+        const table = document.querySelector(".table__content");
         const tableHeader = table.querySelector(".row__header");
         table.innerHTML = "";
-        table.appendChild(tableHeader);
 
         list.forEach(item => {
             const row = document.createElement("div");
@@ -52,10 +52,14 @@ import { getAllFriends, getFriend, deleteFriend, updateFriend } from "./handlerA
     async function loadFriends() {
         friendsList = await getAllFriends();
         populateFriendsTable(friendsList);
+        OpenRegEditorModal(friendsList);
+        OpenRegDeleteModal();
     }
 
     function init() {
+        CloseModal();
         loadFriends();
+
     }
 
     init();
